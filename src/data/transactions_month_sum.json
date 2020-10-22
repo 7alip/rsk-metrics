@@ -1,0 +1,299 @@
+[
+  {
+    "month": "2018-01",
+    "normal": 9,
+    "bridge": 14924,
+    "remasc": 148775,
+    "call": 374,
+    "deploy": 13,
+    "gas_used": 168933748
+  },
+  {
+    "month": "2018-02",
+    "normal": 47,
+    "bridge": 13200,
+    "remasc": 69434,
+    "call": 0,
+    "deploy": 0,
+    "gas_used": 987000
+  },
+  {
+    "month": "2018-03",
+    "normal": 72,
+    "bridge": 12090,
+    "remasc": 75912,
+    "call": 19,
+    "deploy": 1,
+    "gas_used": 2858126
+  },
+  {
+    "month": "2018-04",
+    "normal": 76,
+    "bridge": 8875,
+    "remasc": 72769,
+    "call": 10,
+    "deploy": 3,
+    "gas_used": 4215140
+  },
+  {
+    "month": "2018-05",
+    "normal": 8054,
+    "bridge": 10707,
+    "remasc": 87199,
+    "call": 59,
+    "deploy": 39,
+    "gas_used": 926767837
+  },
+  {
+    "month": "2018-06",
+    "normal": 91546,
+    "bridge": 10220,
+    "remasc": 80976,
+    "call": 50,
+    "deploy": 38,
+    "gas_used": 2916009920
+  },
+  {
+    "month": "2018-07",
+    "normal": 20617,
+    "bridge": 12179,
+    "remasc": 88904,
+    "call": 101,
+    "deploy": 43,
+    "gas_used": 1387961945
+  },
+  {
+    "month": "2018-08",
+    "normal": 30,
+    "bridge": 14646,
+    "remasc": 85194,
+    "call": 0,
+    "deploy": 2,
+    "gas_used": 956529318
+  },
+  {
+    "month": "2018-09",
+    "normal": 43,
+    "bridge": 14989,
+    "remasc": 81313,
+    "call": 3,
+    "deploy": 1,
+    "gas_used": 982015650
+  },
+  {
+    "month": "2018-10",
+    "normal": 59,
+    "bridge": 18889,
+    "remasc": 79013,
+    "call": 18,
+    "deploy": 10,
+    "gas_used": 1242737699
+  },
+  {
+    "month": "2018-11",
+    "normal": 438,
+    "bridge": 11779,
+    "remasc": 78855,
+    "call": 995,
+    "deploy": 35,
+    "gas_used": 953870627
+  },
+  {
+    "month": "2018-12",
+    "normal": 1106,
+    "bridge": 15400,
+    "remasc": 80872,
+    "call": 6563,
+    "deploy": 11,
+    "gas_used": 1565833448
+  },
+  {
+    "month": "2019-01",
+    "normal": 3460,
+    "bridge": 16374,
+    "remasc": 78303,
+    "call": 12056,
+    "deploy": 17,
+    "gas_used": 1828455378
+  },
+  {
+    "month": "2019-02",
+    "normal": 1875,
+    "bridge": 14748,
+    "remasc": 70771,
+    "call": 6421,
+    "deploy": 14,
+    "gas_used": 1350508320
+  },
+  {
+    "month": "2019-03",
+    "normal": 1451,
+    "bridge": 15980,
+    "remasc": 78768,
+    "call": 3404,
+    "deploy": 5,
+    "gas_used": 1289091312
+  },
+  {
+    "month": "2019-04",
+    "normal": 1486,
+    "bridge": 14862,
+    "remasc": 79990,
+    "call": 5786,
+    "deploy": 8,
+    "gas_used": 1428955704
+  },
+  {
+    "month": "2019-05",
+    "normal": 1652,
+    "bridge": 15109,
+    "remasc": 84308,
+    "call": 4709,
+    "deploy": 28,
+    "gas_used": 1296735667
+  },
+  {
+    "month": "2019-06",
+    "normal": 682,
+    "bridge": 15003,
+    "remasc": 86794,
+    "call": 2274,
+    "deploy": 2,
+    "gas_used": 1095771905
+  },
+  {
+    "month": "2019-07",
+    "normal": 3158,
+    "bridge": 12893,
+    "remasc": 82782,
+    "call": 17488,
+    "deploy": 13,
+    "gas_used": 1883187769
+  },
+  {
+    "month": "2019-08",
+    "normal": 11078,
+    "bridge": 12244,
+    "remasc": 81141,
+    "call": 7622,
+    "deploy": 19,
+    "gas_used": 1557208980
+  },
+  {
+    "month": "2019-09",
+    "normal": 552,
+    "bridge": 11223,
+    "remasc": 80970,
+    "call": 40464,
+    "deploy": 33,
+    "gas_used": 5162943980
+  },
+  {
+    "month": "2019-10",
+    "normal": 2641,
+    "bridge": 12005,
+    "remasc": 82327,
+    "call": 53140,
+    "deploy": 162,
+    "gas_used": 7906200050
+  },
+  {
+    "month": "2019-11",
+    "normal": 2855,
+    "bridge": 11776,
+    "remasc": 81402,
+    "call": 45242,
+    "deploy": 55,
+    "gas_used": 7478048920
+  },
+  {
+    "month": "2019-12",
+    "normal": 29074,
+    "bridge": 12198,
+    "remasc": 81988,
+    "call": 30422,
+    "deploy": 56,
+    "gas_used": 4885169828
+  },
+  {
+    "month": "2020-01",
+    "normal": 614,
+    "bridge": 12368,
+    "remasc": 80349,
+    "call": 22371,
+    "deploy": 8,
+    "gas_used": 3498302701
+  },
+  {
+    "month": "2020-02",
+    "normal": 22156,
+    "bridge": 13061,
+    "remasc": 75607,
+    "call": 35513,
+    "deploy": 111,
+    "gas_used": 4898722106
+  },
+  {
+    "month": "2020-03",
+    "normal": 12081,
+    "bridge": 14316,
+    "remasc": 81285,
+    "call": 74491,
+    "deploy": 18,
+    "gas_used": 7025844219
+  },
+  {
+    "month": "2020-04",
+    "normal": 7192,
+    "bridge": 12838,
+    "remasc": 80847,
+    "call": 55759,
+    "deploy": 12,
+    "gas_used": 6244666111
+  },
+  {
+    "month": "2020-05",
+    "normal": 1200,
+    "bridge": 13056,
+    "remasc": 87647,
+    "call": 68876,
+    "deploy": 31,
+    "gas_used": 6929420644
+  },
+  {
+    "month": "2020-06",
+    "normal": 845,
+    "bridge": 16440,
+    "remasc": 82632,
+    "call": 47505,
+    "deploy": 14,
+    "gas_used": 5528109018
+  },
+  {
+    "month": "2020-07",
+    "normal": 7902,
+    "bridge": 14745,
+    "remasc": 86335,
+    "call": 52349,
+    "deploy": 8,
+    "gas_used": 6711246592
+  },
+  {
+    "month": "2020-08",
+    "normal": 6015,
+    "bridge": 13587,
+    "remasc": 88703,
+    "call": 67243,
+    "deploy": 26,
+    "gas_used": 6635584293
+  },
+  {
+    "month": "2020-09",
+    "normal": 1469,
+    "bridge": 7202,
+    "remasc": 43238,
+    "call": 38147,
+    "deploy": 14,
+    "gas_used": 3639859235
+  }
+]

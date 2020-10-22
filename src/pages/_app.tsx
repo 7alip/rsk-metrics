@@ -1,9 +1,8 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import { ChakraProvider } from '@chakra-ui/core'
+import theme from '../theme'
 
-import theme from '@/lib/theme'
-
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <Component {...pageProps} />
