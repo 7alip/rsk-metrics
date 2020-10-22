@@ -2,9 +2,9 @@ import { Flex, VStack } from '@chakra-ui/core'
 import Footer from '@/components/layout/Footer'
 import Header from '@/components/layout/Header'
 import Container from '@/components/layout/Container'
-import TransactionsByMonths from 'src/views/TransactionsByMonths'
-import TotalTransactions from 'src/views/TotalTransactions'
-import TotalGasUsedByMonth from 'src/views/TotalGasUsedByMonth'
+import TransactionsByMonths from '@/views/TransactionsByMonths'
+import TotalTransactions from '@/views/TotalTransactions'
+import TotalGasUsedByMonth from '@/views/TotalGasUsedByMonth'
 
 const Home = (): JSX.Element => {
   return (
