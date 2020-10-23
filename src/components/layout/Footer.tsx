@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
   const colorText = useColorModeValue('white', 'dark.text')
 
   return (
-    <Base className='xyz' w='full' bg={bg}>
+    <Base className='xyz' w='full' bg={bg} hasBorder={false} borderTopWidth={1}>
       <Container>
         <Center h={150}>
           <LogoAltIcon boxSize={20} color={color} />

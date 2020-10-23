@@ -1,7 +1,14 @@
 import React, { PropsWithChildren } from 'react'
 import { Box, useColorModeValue, BoxProps, FlexProps } from '@chakra-ui/core'
 
-const Base = (props: PropsWithChildren<BoxProps | FlexProps>): JSX.Element => {
+const Base = ({
+  children,
+  rounded,
+  hasBorder = true,
+  ...rest
+}: PropsWithChildren<
+  (BoxProps | FlexProps) & { hasBorder: boolean }
+>): JSX.Element => {
   const bg = useColorModeValue('light.box', 'dark.box')
   const shadow = useColorModeValue('light.box', 'dark.box')
   const borderColor = useColorModeValue('light.border', 'dark.border')
@@ -10,13 +17,13 @@ const Base = (props: PropsWithChildren<BoxProps | FlexProps>): JSX.Element => {
     <Box
       bg={bg}
       borderColor={borderColor}
-      borderWidth={1}
+      borderWidth={hasBorder ? 1 : 0}
       shadow={shadow}
-      borderRadius={props.rounded ? 'md' : 0}
+      borderRadius={rounded ? 'md' : 0}
       transition='all 0.3s ease-in-out'
-      {...props}
+      {...rest}
     >
-      {props.children}
+      {children}
     </Box>
   )
 }

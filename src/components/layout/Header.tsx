@@ -10,7 +10,16 @@ const Header: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Base as={Flex} align='center' justify='center' w='full' h={16} mb={1}>
+    <Base
+      as={Flex}
+      align='center'
+      justify='center'
+      w='full'
+      h={16}
+      mb={1}
+      hasBorder={false}
+      borderBottomWidth={1}
+    >
       <Container fluid>
         <Flex justify='space-between'>
           <HStack color='rsk.teal'>

@@ -1,7 +1,8 @@
+import { SystemStyleObject } from '@chakra-ui/core'
 import { mode } from '@chakra-ui/theme-tools'
 
 export default {
-  global: (props: Record<string, unknown>) => ({
+  global: (props: SystemStyleObject): SystemStyleObject => ({
     body: {
       fontFamily: 'body',
       color: mode('light.text', 'dark.text')(props),
