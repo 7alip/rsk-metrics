@@ -7,7 +7,7 @@ const Base = ({
   hasBorder = true,
   ...rest
 }: PropsWithChildren<
-  (BoxProps | FlexProps) & { hasBorder: boolean }
+  (BoxProps | FlexProps) & { hasBorder?: boolean }
 >): JSX.Element => {
   const bg = useColorModeValue('light.box', 'dark.box')
   const shadow = useColorModeValue('light.box', 'dark.box')
