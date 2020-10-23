@@ -13,6 +13,7 @@ const Base = (props: PropsWithChildren<BoxProps | FlexProps>): JSX.Element => {
       borderWidth={1}
       shadow={shadow}
       borderRadius={props.rounded ? 'md' : 0}
+      transition='all 0.3s ease-in-out'
       {...props}
     >
       {props.children}
