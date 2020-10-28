@@ -17,7 +17,7 @@ export type ChartType =
 
 export type ChartDataKey = {
   name: string
-  color?: ReactText
+  color?: string
   variant: ReactText
   isActive?: boolean
 }
