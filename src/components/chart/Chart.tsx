@@ -71,7 +71,7 @@ const Chart = ({
 
   const initialKeys: ChartDataKey[] = dataKeys.map((key, index) => ({
     name: key.name,
-    color: chartColors[index],
+    color: chartColors[Number(key.color) || index],
     variant: variant || key.variant || 'bar',
     isActive: true,
   }))
@@ -121,12 +121,12 @@ const Chart = ({
                   >
                     <stop
                       offset='5%'
-                      stopColor={chartColors[index]}
+                      stopColor={chartColors[Number(key.color) || index]}
                       stopOpacity={1}
                     />
                     <stop
                       offset='100%'
-                      stopColor={chartColors[index]}
+                      stopColor={chartColors[Number(key.color) || index]}
                       stopOpacity={0.1}
                     />
                   </linearGradient>
@@ -183,10 +183,10 @@ const Chart = ({
                     fill={
                       key.variant === 'area'
                         ? `url(#${key.name + random})`
-                        : chartColors[index]
+                        : chartColors[Number(key.color) || index]
                     }
                     strokeWidth='2px'
-                    stroke={chartColors[index]}
+                    stroke={chartColors[Number(key.color) || index]}
                     stackId={settings.stacked && 1}
                   />
                 )
