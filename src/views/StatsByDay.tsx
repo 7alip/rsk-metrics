@@ -18,12 +18,12 @@ const StatsByDay: React.FC = () => {
     id,
   }))
 
-  const hashrateKeys: ChartDataKey[] = [{ name: 'hashrate', variant: 'bar' }]
+  const hashrateKeys: ChartDataKey[] = [{ name: 'hashrate', variant: 'area' }]
   const ciculatingSupplyKeys: ChartDataKey[] = [
     { name: 'circulatingSupply', variant: 'area' },
   ]
   const activeAccountsKey: ChartDataKey[] = [
-    { name: 'activeAccounts', variant: 'line' },
+    { name: 'activeAccounts', variant: 'area' },
   ]
 
   //   if (isLoading || !data)
