@@ -43,7 +43,6 @@ export type ChartSettingsProps = {
   isOpen: boolean
   onChangeSettings: Dispatch<SetStateAction<any>>
   onChangeVariant: (value: ReactText, index: number) => void
-  onCheckDataKeys: (values: string[]) => void
   onClose: () => void
   settings: ChartSettings
   toggleChangeStack: () => void

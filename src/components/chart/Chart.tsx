@@ -78,18 +78,6 @@ const Chart = ({
 
   const [chartDataKeys, setChartDataKeys] = useState(initialKeys)
 
-  const handleCheckDataKeys = (values: string[]) => {
-    const updatedKeys = chartDataKeys.map(key => {
-      if (!values.includes(key.name)) {
-        key.isActive = false
-      } else {
-        key.isActive = true
-      }
-      return key
-    })
-    setChartDataKeys(updatedKeys)
-  }
-
   const handleChangeVariant = (variant: ReactText, index: number) => {
     const updatedKeys = [...chartDataKeys]
     updatedKeys[index].variant = variant
@@ -223,7 +211,6 @@ const Chart = ({
           onClose={onClose}
           onChangeSettings={setSettings}
           onChangeVariant={handleChangeVariant}
-          onCheckDataKeys={handleCheckDataKeys}
           settings={settings}
           toggleChangeStack={toggleChangeStack}
         />

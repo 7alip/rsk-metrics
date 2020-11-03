@@ -6,8 +6,6 @@ import {
   DrawerOverlay,
   DrawerContent,
   HStack,
-  CheckboxGroup,
-  Checkbox,
   useColorModeValue,
   VStack,
   Text,
@@ -23,7 +21,6 @@ function ChartSettings({
   onClose,
   onChangeSettings,
   onChangeVariant,
-  onCheckDataKeys,
   settings,
   toggleChangeStack,
 }: ChartSettingsProps): ReactElement {
@@ -51,38 +48,24 @@ function ChartSettings({
             Chart Settings
           </DrawerHeader>
           <DrawerBody>
-            <CheckboxGroup
-              colorScheme='teal'
-              defaultValue={chartKeys.map(item => item.name)}
-              onChange={onCheckDataKeys}
-            >
-              <VStack spacing={3}>
-                {chartKeys.map((key, index) => (
-                  <HStack key={index}>
-                    <Checkbox
-                      color={chartKeys[index].color}
-                      value={key.name}
-                      key={`item-${index}`}
-                      isChecked={chartKeys[index].isActive}
-                    >
-                      <Text w={16} isTruncated>
-                        {key.name}
-                      </Text>
-                    </Checkbox>
-                    <ChartSettingsVariantButtons
-                      onChangeVariant={variant =>
-                        onChangeVariant(variant, index)
-                      }
-                      activeKey={key}
-                    />
-                  </HStack>
-                ))}
-              </VStack>
-            </CheckboxGroup>
+            <VStack spacing={3}>
+              {chartKeys.map((key, index) => (
+                <HStack key={index}>
+                  <Text color={key.color} w={16} isTruncated>
+                    {key.name}
+                  </Text>
+                  <ChartSettingsVariantButtons
+                    onChangeVariant={variant => onChangeVariant(variant, index)}
+                    activeKey={key}
+                  />
+                </HStack>
+              ))}
+            </VStack>
             <HStack mt={4} alignItems='flex-start'>
               <VStack spacing={3}>
                 <Text>Chart Type</Text>
                 <Select
+                  size='sm'
                   value={settings.type}
                   onChange={e =>
                     onChangeSettings({ ...settings, type: e.target.value })

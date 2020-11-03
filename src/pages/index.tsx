@@ -12,7 +12,7 @@ const Home = (): JSX.Element => {
   return (
     <VStack minH='100vh' alignItems='center'>
       <Header />
-      <Container fluid flex={1}>
+      <Container fluid flex={1} mt='0 !important'>
         <Flex flexWrap='wrap' mx={-3}>
           <VStack spacing={3} w={['full', null, 1 / 4]} p={2}>
             <TotalGasUsedByMonth />

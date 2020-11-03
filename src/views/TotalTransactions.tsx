@@ -14,6 +14,7 @@ import {
   PieChart,
   ResponsiveContainer,
   Tooltip,
+  TooltipProps,
 } from 'recharts'
 
 import { useChartColors } from '@/hooks/useChartColors'
@@ -21,28 +22,14 @@ import Card from '@/components/Card'
 
 import totalTransactions from '../data/total_transactions.json'
 
-type CustomTooltipProps = {
-  active: boolean
-  payload: {
-    name: string
-    value: number
-    payload: {
-      fill: string
-    }
-  }[]
-  total: number
-}
+type CustomTooltipProps = TooltipProps & { total: number }
 
 const CustomTooltip = React.memo(
-  ({
-    active,
-    payload,
-    total,
-  }: PropsWithChildren<CustomTooltipProps>): JSX.Element | null => {
+  (props: PropsWithChildren<CustomTooltipProps>): JSX.Element | null => {
     const theme = useTheme()
     const { colorMode } = useColorMode()
 
-    if (active) {
+    if (props.active) {
       return (
         <Box
           p={1}
@@ -52,13 +39,16 @@ const CustomTooltip = React.memo(
           borderWidth={1}
           textAlign='center'
         >
-          {payload !== undefined && (
+          {props.payload !== undefined && (
             <>
-              <Text fontWeight='bold' color={payload[0].payload?.fill}>
-                {payload[0].name}:{' '}
-                {`${((payload[0].value / total) * 100).toFixed(1)}%`}
+              <Text fontWeight='bold' color={props.payload[0].payload?.fill}>
+                {props.payload[0].name}:{' '}
+                {`${(
+                  (Number(props.payload[0].value) / props.total) *
+                  100
+                ).toFixed(1)}%`}
               </Text>
-              <Text>{payload[0].value.toLocaleString()}</Text>
+              <Text>{props.payload[0].value.toLocaleString()}</Text>
             </>
           )}
         </Box>
@@ -111,8 +101,8 @@ const TotalTransactions: React.FC = () => {
           </Pie>
           <Legend layout='horizontal' wrapperStyle={{ fontSize: '0.8rem' }} />
           <Tooltip
-            content={(active, payload) => (
-              <CustomTooltip active={active} payload={payload} total={total} />
+            content={(props: TooltipProps) => (
+              <CustomTooltip {...props} total={total} />
             )}
           />
         </PieChart>

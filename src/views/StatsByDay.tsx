@@ -5,7 +5,7 @@ import Chart from '@/components/chart/Chart'
 
 import statsByDay from '../data/stats_day.json'
 import { ChartDataKey } from '@/types/types'
-import { VStack } from '@chakra-ui/core'
+import { HStack, VStack } from '@chakra-ui/core'
 
 const StatsByDay: React.FC = () => {
   const hashrates = statsByDay.map(({ hashrate, id }) => ({ id, hashrate }))
@@ -44,25 +44,27 @@ const StatsByDay: React.FC = () => {
           xAxis='id'
         />
       </Card>
-      <Card header='Circulating Supply'>
-        <Chart
-          height={300}
-          hasBrush
-          data={circulatingSupplies}
-          dataKeys={ciculatingSupplyKeys}
-          xAxis='id'
-          type='step'
-        />
-      </Card>
-      <Card header='Active Accounts'>
-        <Chart
-          height={300}
-          hasBrush
-          data={activeAccounts}
-          dataKeys={activeAccountsKey}
-          xAxis='id'
-        />
-      </Card>
+      <HStack spacing={3} w='full'>
+        <Card header='Circulating Supply'>
+          <Chart
+            height={300}
+            hasBrush
+            data={circulatingSupplies}
+            dataKeys={ciculatingSupplyKeys}
+            xAxis='id'
+            type='step'
+          />
+        </Card>
+        <Card header='Active Accounts'>
+          <Chart
+            height={300}
+            hasBrush
+            data={activeAccounts}
+            dataKeys={activeAccountsKey}
+            xAxis='id'
+          />
+        </Card>
+      </HStack>
     </VStack>
   )
 }
