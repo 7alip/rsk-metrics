@@ -37,6 +37,8 @@ const Chart = ({
   variant,
   noLegend,
   stacked,
+  noXAxis,
+  noYAxis,
 }: ChartProps) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const { colors } = useTheme()
@@ -122,14 +124,14 @@ const Chart = ({
               </defs>
             )}
             <XAxis
-              hide={basic}
+              hide={basic || noXAxis}
               dataKey={xAxis}
               stroke={colors[colorMode]?.charts.axis}
               height={40}
               tick={{ fontSize: '0.8em' }}
             />
             <YAxis
-              hide={basic}
+              hide={basic || noYAxis}
               tickFormatter={nFormatter}
               stroke={colors[colorMode]?.charts.axis}
               tick={{ fontSize: '0.8em' }}

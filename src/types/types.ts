@@ -29,6 +29,8 @@ export interface ChartSettings {
   variant?: ReactText
   noLegend?: boolean
   stacked?: boolean
+  noXAxis?: boolean
+  noYAxis?: boolean
 }
 
 export interface ChartProps extends ChartSettings {

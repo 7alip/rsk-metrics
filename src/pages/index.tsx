@@ -6,7 +6,9 @@ import Container from '@/components/layout/Container'
 import TransactionsByMonths from '@/views/TransactionsByMonths'
 import TotalTransactions from '@/views/TotalTransactions'
 import TotalGasUsedByMonth from '@/views/TotalGasUsedByMonth'
-import StatsByDay from '@/views/StatsByDay'
+import ActiveAccounts from '@/views/ActiveAccounts'
+import CirculatingSupply from '@/views/CirculatingSupply'
+import Hashrate from '@/views/Hashrate'
 
 const Home = (): JSX.Element => {
   return (
@@ -15,12 +17,14 @@ const Home = (): JSX.Element => {
       <Container fluid flex={1} mt='0 !important'>
         <Flex flexWrap='wrap' mx={-3}>
           <VStack spacing={3} w={['full', null, 1 / 4]} p={2}>
-            <TotalGasUsedByMonth />
             <TotalTransactions />
+            <TotalGasUsedByMonth />
+            <CirculatingSupply />
+            <ActiveAccounts />
           </VStack>
           <VStack spacing={3} w={['full', null, 3 / 4]} p={2}>
             <TransactionsByMonths />
-            <StatsByDay />
+            <Hashrate />
           </VStack>
         </Flex>
       </Container>
